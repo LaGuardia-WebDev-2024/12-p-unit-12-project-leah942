@@ -24,38 +24,39 @@ Select ONE Additional
   <body>
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
-    <button id="mem3-button">Memory #3</button>
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p id="spain">More about this memory.</p>
+        <img src="https://www.spain.info/export/sites/segtur/.content/imagenes/cabeceras-grandes/valencia/vista-peniscola-desde-castillo-papa-luna-s712575202.jpg" width="250" id="valencia" style="display:none">
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
-
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p id="camp">More about this memory.</p>
+        <img src="https://coolworks-bucket-prod.sfo3.digitaloceanspaces.com/clients/17730/logos/medium/CT_Logo_-_NEW.jpg?1733855213" width="150" class="takodah" style="display:none">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "rgb(73, 132, 241)");
+        $("#spain").text("I stayed with my best friend and her family in Valencia last summer. I had an amazing time, the sun was always out, I explored a lot of the city, and was immersed in the culture there. I love that I got to enjoy it with my best friends.");
+        $("#valencia").show(2000)
+        $("body").css("background-color","rgb(241, 229, 73)")
+        
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "rgb(73, 132, 241)");
+        $("#camp").text("Last summer I worked as a Leader In Training at my summer camp. I got to work with the youngest kids which I really enjoyed and I got to know a lot of really cool people");
+        $(".takodah").show(2000)
+        $("body").css("background-color", "rgb(149, 250, 236)")
       });
 
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-      });
+    
     </script>
   </body>
 </html>
